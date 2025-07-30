@@ -11,13 +11,12 @@
 export ZOPEN_BUILD_LINE="DEV"
 
 ## Required IF ZOPEN_BUILD_LINE='STABLE'
-export ZOPEN_STABLE_URL=""  # Specify the stable build URL (either git or tarball)
-export ZOPEN_STABLE_DEPS="" # Specify the stable build dependencies.
+export ZOPEN_STABLE_URL="https://github.com/apache/apr-util.git"  # Specify the stable build URL (either git or tarball)
+export ZOPEN_STABLE_DEPS="bash automake autoconf make m4 sed diffutils findutils coreutils zoslib make grep check_python tar libxml2 openssl expat libiconv apr" # Specify the stable build dependencies.
 
 ## Required IF ZOPEN_BUILD_LINE='DEV'
 export ZOPEN_DEV_URL="https://github.com/apache/apr-util.git"   # Specify the dev build URL
 export ZOPEN_DEV_DEPS="bash automake autoconf make m4 sed diffutils findutils coreutils zoslib make grep check_python tar libxml2 openssl expat libiconv apr"
-#export ZOPEN_DEV_DEPS="automake autoconf make m4 sed diffutils findutils coreutils zoslib make grep check_python tar libxml2 openssl expat libiconv"
 
 ## Specify a space-delimited list of applicable categories.
 ## See tool_categories.txt for valid options
